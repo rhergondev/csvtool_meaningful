@@ -27,7 +27,7 @@ On your terminal run the following commands:
    
    ```bash
    git clone https://github.com/rhergondev/csvtool_meaningful
-   cd csvtool_meaningful>
+   cd csvtool_meaningful
    ```
 
 **2. Build the docker image:**
@@ -46,10 +46,6 @@ On your terminal run the following commands:
    * Access the container shell
    ```bash
    docker exec -it csv_tool_app bash
-   ```
-   * Access the backend directory
-   ```bash
-   cd /app/backend
    ```
    * Create the DB tables
    ```bash
