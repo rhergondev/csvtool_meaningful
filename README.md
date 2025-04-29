@@ -21,9 +21,48 @@ The repository includes a Dockerfile that helps with deployement, it also instal
 
 Este método utiliza Docker para encapsular la aplicación y sus dependencias, asegurando un entorno consistente. Se asume que Docker y Git están instalados en la máquina host (Ubuntu 24.04).
 
-**1. Clone the repository:**
+On your terminal run the following commands:
 
-   On your terminal run the following commands:
+**1. Clone the repository:**
+   
    ```bash
-   [git clone <URL_DE_TU_REPOSITORIO_GITHUB>](https://github.com/rhergondev/csvtool_meaningful)
+   git clone https://github.com/rhergondev/csvtool_meaningful
    cd csvtool_meaningful>
+   ```
+
+**2. Build the docker image
+
+   ```bash
+   docker build -t csv_pivot_tool .
+   ```
+
+**3. Run the Container for the first time
+
+   ```bash
+   docker run -d -p 8000:8000 --name csv_tool_app csv_pivot_tool
+   ```
+
+**4. With the container running setup the user DB and create a superuser
+   * Access the container shell
+   ```bash
+   docker exec -it csv_tool_app bash
+   ```
+   * Access the backend directory
+   ```bash
+   cd /app/backend
+   ```
+   * Create the DB tables
+   ```bash
+   python3 manage.py migrate
+   ```
+   * Create a superuser
+   ```bash
+   python3 manage.py createsuperuser
+   ```
+   * Exit the shell
+   ```bash
+   exit
+   ```
+
+**5. You should now have access to the App on port 8000
+   Visit http://localhost:8000
