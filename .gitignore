@@ -3,3 +3,4 @@
 /backend/__pycache__/
 /backend/static
 /backend/temp_csv_files
+/backend/staticfiles
