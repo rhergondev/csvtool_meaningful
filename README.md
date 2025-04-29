@@ -30,19 +30,19 @@ On your terminal run the following commands:
    cd csvtool_meaningful>
    ```
 
-**2. Build the docker image
+**2. Build the docker image:**
 
    ```bash
    docker build -t csv_pivot_tool .
    ```
 
-**3. Run the Container for the first time
+**3. Run the Container for the first time:**
 
    ```bash
    docker run -d -p 8000:8000 --name csv_tool_app csv_pivot_tool
    ```
 
-**4. With the container running setup the user DB and create a superuser
+**4. With the container running setup the user DB and create a superuser:**
    * Access the container shell
    ```bash
    docker exec -it csv_tool_app bash
@@ -64,5 +64,5 @@ On your terminal run the following commands:
    exit
    ```
 
-**5. You should now have access to the App on port 8000
+**5. You should now have access to the App on port 8000:**
    Visit http://localhost:8000
