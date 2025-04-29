@@ -25,5 +25,5 @@ Este método utiliza Docker para encapsular la aplicación y sus dependencias, a
 
    On your terminal run the following commands:
    ```bash
-   git clone <URL_DE_TU_REPOSITORIO_GITHUB>
-   cd <NOMBRE_DEL_DIRECTORIO_CLONADO>
+   [git clone <URL_DE_TU_REPOSITORIO_GITHUB>](https://github.com/rhergondev/csvtool_meaningful)
+   cd csvtool_meaningful>
