@@ -13,7 +13,9 @@ This is a full-stack web app developed as a technical exercise. It allows the au
 * **Environment:** Designed to run on Ubuntu 24.04 (Deployed via Docker).
 * **Served at:** Port 8000
 
-** NOTES ** - Per exercise requirements no pip is used, all dependencies are retrieved using standard Ubuntu APT-GET
+** NOTES ** 
+   - Per exercise requirements no pip is used, all dependencies are retrieved using standard Ubuntu APT-GET
+   - There are attached testing files in the repository, feel free to download them
 
 ## Instalation instruction (Docker - Recommended)
 
