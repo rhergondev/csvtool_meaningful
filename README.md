@@ -23,6 +23,11 @@ The repository includes a Dockerfile that helps with deployment, it also install
 
 This method users Docker to encapsulate the App and its dependenciesm it assumes that Docker and Git are instaled in the hots machine.
 
+**Prerequisites:**
+* Git installed (`sudo apt update && sudo apt install -y git`)
+* Docker Engine installed (Follow official Docker guide for Ubuntu: https://docs.docker.com/engine/install/ubuntu/)
+* User added to the `docker` group or use `sudo` for Docker commands (as shown below).
+
 On your terminal run the following commands (Note some of these commands might require superuser access or the sudo command):
 
 **1. Clone the repository:**
