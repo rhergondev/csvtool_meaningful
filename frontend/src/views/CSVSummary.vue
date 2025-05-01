@@ -176,7 +176,7 @@ async function handleSubmit() {
   console.log("Submitting files:", file1.value, file2.value);
 
   try {
-    const response = await fetch("http://localhost:8000/api/csv/upload/", {
+    const response = await fetch("api/csv/upload/", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -195,7 +195,7 @@ async function handleSubmit() {
     console.log("Files uploaded successfully:", data);
 
     successMsg.value = `Files processed successfully!`;
-    downloadUrl.value = `http://localhost:8000${data.download_url}`;
+    downloadUrl.value = `${data.download_url}`;
   } catch (error) {
     console.error("Error during file upload:", error);
     uploadError.value =

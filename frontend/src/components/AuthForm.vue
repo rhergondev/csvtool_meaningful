@@ -72,7 +72,7 @@ const emit = defineEmits(["login-success"]);
 
 onMounted(async () => {
   try {
-    await fetch("http://localhost:8000/api/users/status/", {
+    await fetch("api/users/status/", {
       credentials: "include",
     });
   } catch (error) {
@@ -131,7 +131,7 @@ async function handleLogin() {
   }
 
   try {
-    const response = await fetch("http://localhost:8000//api/users/login/", {
+    const response = await fetch("/api/users/login/", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -185,7 +185,7 @@ async function handleRegister() {
   }
 
   try {
-    const response = await fetch("http://localhost:8000/api/users/register/", {
+    const response = await fetch("/api/users/register/", {
       method: "POST",
       credentials: "include",
       headers: {

@@ -35,7 +35,7 @@ function getCookie(name) {
 async function fetchUserStatus() {
   console.log("Fetching user status...");
   try {
-    const response = await fetch("http://localhost:8000/api/users/status/", {
+    const response = await fetch("/api/users/status/", {
       credentials: "include",
     });
     if (response.ok) {
@@ -59,7 +59,7 @@ async function handleLogout() {
   }
 
   try {
-    const response = await fetch("http://localhost:8000/api/users/logout/", {
+    const response = await fetch("/api/users/logout/", {
       method: "POST",
       credentials: "include",
       headers: {
