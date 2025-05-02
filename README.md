@@ -72,6 +72,9 @@ On your terminal run the following commands (Note some of these commands might r
 
 ## Installation Instructions (Ubuntu - Local)
 
+**Prerequisites:**
+* Git installed (`sudo apt update && sudo apt install -y git`)
+
 On your terminal run the following commands (Note some of these commands might require superuser access or the sudo command):
 
 **1. Clone the repository:**
