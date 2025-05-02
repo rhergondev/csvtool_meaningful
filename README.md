@@ -90,7 +90,7 @@ On your terminal run the following commands (Note some of these commands might r
     python3-django \
     python3-django-cors-headers \
     python3-pandas \
-    python3-whitenoise /
+    python3-whitenoise \
     libjs-jquery \
     python3-waitress
    ```
