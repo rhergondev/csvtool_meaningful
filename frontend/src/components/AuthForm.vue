@@ -72,7 +72,7 @@ const emit = defineEmits(["login-success"]);
 
 onMounted(async () => {
   try {
-    await fetch("api/users/status/", {
+    await fetch("/api/users/status/", {
       credentials: "include",
     });
   } catch (error) {

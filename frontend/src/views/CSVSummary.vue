@@ -176,7 +176,7 @@ async function handleSubmit() {
   console.log("Submitting files:", file1.value, file2.value);
 
   try {
-    const response = await fetch("api/csv/upload/", {
+    const response = await fetch("/api/csv/upload/", {
       method: "POST",
       credentials: "include",
       headers: {
