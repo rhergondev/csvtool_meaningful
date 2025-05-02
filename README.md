@@ -90,7 +90,9 @@ On your terminal run the following commands (Note some of these commands might r
     python3-django \
     python3-django-cors-headers \
     python3-pandas \
-    python3-whitenoise
+    python3-whitenoise /
+    libjs-jquery \
+    python3-waitress
    ```
 
 **3. Add the necessary folders:**
@@ -100,15 +102,7 @@ On your terminal run the following commands (Note some of these commands might r
    mkdir -p staticfiles temp_csv_files
    ```
 
-**4. Add the rest of the dependencies:**
-
-   ```bash
-   sudo apt-get update && sudo apt install -y \
-    libjs-jquery \
-    python3-waitress
-   ```
-
-**5. Generate the static files for django:**
+**4. Generate the static files for django:**
    ```bash
    python3 manage.py collectstatic --noinput --clear
    ```
