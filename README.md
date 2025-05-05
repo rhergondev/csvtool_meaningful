@@ -72,22 +72,13 @@ On your terminal run the following commands:
 
 ## Installation Instructions (Ubuntu - Local)
 
-**Prerequisites:**
-* Git installed (`sudo apt update && sudo apt install -y git`)
-
 On your terminal run the following commands:
 
-**1. Clone the repository:**
-   
-   ```bash
-   git clone https://github.com/rhergondev/csvtool_meaningful
-   cd csvtool_meaningful
-   ```
-
-**2. Install the first dependencies:**
+**1. Install the dependencies:**
 
    ```bash
    sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+    git \
     python3 \
     python-is-python3 \
     python3-django \
@@ -96,6 +87,13 @@ On your terminal run the following commands:
     python3-whitenoise \
     libjs-jquery \
     python3-waitress
+   ```
+
+**2. Clone the repository:**
+   
+   ```bash
+   git clone https://github.com/rhergondev/csvtool_meaningful
+   cd csvtool_meaningful
    ```
 
 **3. Add the necessary folders:**
